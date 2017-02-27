@@ -1,0 +1,35 @@
+
+<button {{action 'sort' 'airline'}}>
+  airline
+</button>
+
+<button {{action 'sort' 'price'}}>
+  price
+</button>
+
+<button {{action 'sort' 'totalStops'}}>
+  stops
+</button>
+
+<div class="flex">
+  <div>
+    {{#each flights as |flight|}}
+      {{flight-details flight selectFlight=(action "selectFlight")}}
+    {{/each}}
+  </div>
+
+  <div>
+    {{!setInitialFlightsHack}}
+    Compare:
+    <div class="flex">
+      <div>
+        A
+        {{flight-full flightA}}
+      </div>
+      <div>
+        B
+        {{flight-full flightB}}
+      </div>
+    </div>
+  </div>
+</div>

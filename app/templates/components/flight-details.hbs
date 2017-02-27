@@ -1,0 +1,55 @@
+<button {{action 'expand'}}>
+  {{if expand "-" "+"}}
+</button>
+
+<div class="col">
+  {{flight.airline}}
+</div>
+<div class="col">
+  {{flight.takeoff.airport}} ->
+  {{flight.landing.airport}}
+  (+{{totalStops}})
+</div>
+<div class="col">
+  {{!moment-format flight.takeoff.time 'DD/MM HH:mm'}}
+</div>
+<div class="col">
+  {{money flight.price}}
+</div>
+
+<button {{action 'compare'}}>
+  B
+</button>
+
+{{#if expand}}
+  <br>
+  <br>
+
+  departs {{moment-from-now flight.takeoff.time}}
+
+  <p>
+    departs:
+    <br>
+    {{flight.takeoff.airport}}
+    {{moment flight.takeoff.time}}
+  </p>
+  <p>
+    arrives:
+    <br>
+    {{flight.landing.airport}}
+    {{moment flight.landing.time}}
+  </p>
+
+  stops:
+  {{#each flight.stops as |stop index|}}
+    {{#if index}}, {{/if}}
+    {{stop}}
+  {{else}}
+    none
+  {{/each}}
+
+  <br>
+  flight {{flight.number}}
+{{/if}}
+
+{{yield}}

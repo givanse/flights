@@ -1,0 +1,51 @@
+
+body {
+  font-family: monospace;
+}
+
+header {
+  margin: 8px;
+}
+
+header > a {
+  margin: 4px;
+  padding: 4px;
+  font-size: 1.2rem;
+}
+
+.flight_details {
+  margin: 4px;
+  padding: 4px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+}
+
+.money {
+  background: transparent url('/dollar.png') 0 0 no-repeat;
+  background-size: contain;
+  background-position-y: 5px;
+  margin-right: 0.5rem;
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+}
+
+.col {
+  display: inline-block;
+  min-width: 100px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex div {
+  flex-grow: 1;
+}
+
+.flight_full {
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  margin: 4px;
+  padding: 8px;
+}

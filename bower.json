@@ -1,5 +1,6 @@
 {
   "name": "flights",
   "dependencies": {
+    "urijs": "^1.18.7"
   }
 }

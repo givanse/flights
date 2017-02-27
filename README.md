@@ -1,52 +1,10 @@
-# flights
+# :airplane: Flights 
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Twiddles:
 
-## Prerequisites
+[composing with components](https://ember-twiddle.com/c94d165be632ce921104f0242474ecf5?openFiles=templates.application.hbs%2C&route=%2Fcontextual-components)
 
-You will need the following things properly installed on your computer.
+[unrendered computeds](https://ember-twiddle.com/9a505c04e139cb14a82ecdc8945e7abf?openFiles=templates.components.v3-dialogue-box.hbs%2C)
 
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with NPM)
-* [Bower](https://bower.io/)
-* [Ember CLI](https://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
-
-## Installation
-
-* `git clone <repository-url>` this repository
-* `cd flights`
-* `npm install`
-* `bower install`
-
-## Running / Development
-
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+[@each two levels deep is not supported](https://ember-twiddle.com/c580593125450d241f248d63193d6431?openFiles=templates.components.v3-dialogue-box.hbs%2C)
+2.7 adds a warning

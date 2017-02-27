@@ -1,0 +1,29 @@
+{{#if flight}}
+  departs {{moment-from-now flight.takeoff.time}}
+
+  <p>
+    departs:
+    {{flight.takeoff.airport}}
+    {{moment flight.takeoff.time}}
+  </p>
+  <p>
+    arrives:
+    {{flight.landing.airport}}
+    {{moment flight.landing.time}}
+  </p>
+
+  stops:
+  {{#each flight.stops as |stop index|}}
+    {{#if index}}, {{/if}}
+    {{stop}}
+  {{else}}
+    none
+  {{/each}}
+
+  <br>
+  flight {{flight.number}}
+{{else}}
+  select a flight
+{{/if}}
+
+{{yield}}
